@@ -1,3 +1,10 @@
+---
+layout: post
+title: "Create an S3 Bucket with Terraform"
+date: 2025-07-29
+thumbnail: /assets/img/s3-bucket-thumb.png
+---
+
 # 🚀 Create an S3 Bucket with Terraform
 
 This example demonstrates how to create a basic Amazon S3 bucket using Terraform.
