@@ -1,5 +1,17 @@
-Here you can say lots of fun things about your site.
+---
+layout: default
+title: Home
+---
 
-Maybe say a some things about yourself.
+<h1>📝 Latest Blog Posts</h1>
 
-Or maybe what you plan to blog about.
+<div class="post-grid">
+  {% for post in site.posts %}
+    <div class="post-tile">
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
+      <p>{{ post.excerpt }}</p>
+      <a class="read-more" href="{{ post.url }}">Read more →</a>
+    </div>
+  {% endfor %}
+</div>
